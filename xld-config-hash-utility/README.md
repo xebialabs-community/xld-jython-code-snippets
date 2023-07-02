@@ -5,8 +5,8 @@
 1. Apply this entry to the conf/logback.xml file for each node to be examined.
 
         <logger name="com.xebialabs.deployit.engine.tasker.distribution.versioning" level="trace" />
-        
-2. Copy the logs to a host with a Python 2.7 installation.
+       
+2. Restart the nodes and capture the logs.  Copy the logs to a host with a Python 2.7 installation.
 
 3. Configure the properties file with the appropriate start and end datetimes for the two logs.
 
