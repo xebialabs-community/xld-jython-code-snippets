@@ -26,9 +26,6 @@ def create_map(pattern, log_file_path, key_hash_map, start_datetime, end_datetim
         m = pattern.match(line)
         if m:
             matched_line_count += 1
-            line_datetime = m.group(1)
-            line_hash = m.group(2)
-            line_itemname = m.group(3)
             if m.group(1) >= start_datetime and m.group(1) <= end_datetime:
                 key_hash_map[m.group(3)] = m.group(2)
     log_file.close()
